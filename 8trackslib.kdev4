@@ -1,0 +1,4 @@
+[Project]
+Name=8trackslib
+Manager=KDevCMakeManager
+VersionControl=kdevgit
