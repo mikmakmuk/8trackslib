@@ -9,3 +9,4 @@ add_library(8tracks SHARED src/api.cpp src/exception.cpp)
 target_link_libraries(8tracks curlpp jsoncpp)
 
 install(TARGETS 8tracks LIBRARY DESTINATION lib)
+install(FILES include/api.hpp include/exception.hpp DESTINATION include/8trackslib)
