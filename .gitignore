@@ -1,0 +1,4 @@
+build/
+.kdev4/
+Makefile
+8trackslib.kdev4

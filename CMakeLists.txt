@@ -1,5 +1,11 @@
 project(8trackslib)
+cmake_minimum_required(VERSION 2.8)
 
-add_executable(8trackslib main.cpp)
+set(CMAKE_BUILD_TYPE Release)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-install(TARGETS 8trackslib RUNTIME DESTINATION bin)
+add_library(8tracks SHARED src/api.cpp src/exception.cpp)
+
+target_link_libraries(8tracks curlpp jsoncpp)
+
+install(TARGETS 8tracks LIBRARY DESTINATION lib)
